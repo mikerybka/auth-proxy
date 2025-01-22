@@ -18,7 +18,7 @@ func main() {
 	}
 	s := &auth.Proxy{
 		DB: &auth.DB{
-			Dir: requireEnvVar("DB_DIR"),
+			Dir: requireEnvVar("AUTH_DATA_DIR"),
 		},
 		TwilioClient: &twilio.Client{
 			AccountSID:  requireEnvVar("TWILIO_ACCOUNT_SID"),
